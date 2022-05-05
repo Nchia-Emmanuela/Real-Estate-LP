@@ -8,6 +8,11 @@
     font-family: "Montserrat", sans-serif;
 }
 
+:root {
+    --main-color: #286983;
+    --secondary-color: #34738e;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -39,7 +44,7 @@ a {
 }
 
 .navbar .logo a {
-    color: #5E8EA2;
+    color: var(--main-color);
     font-size: 20px;
     font-weight: 700;
 }
@@ -48,8 +53,17 @@ a {
     margin-right: 0.3rem;
 }
 
-.menu li a {
-    color: rgba(0, 0, 0, 0.7);
+.navbar a {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    transition: 0.2s ease-in-out;
+    font-weight: 600;
+}
+
+.navbar a:hover,
+.navbar a:focus-within {
+    color: var(--main-color);
+    outline: none;
 }
 
 .menu li {
@@ -64,9 +78,14 @@ a {
 .auth a:not(:last-of-type) {
     margin-right: 2rem;
     margin-left: 1.5rem;
-    color: rgba(0, 0, 0, 0.7);
 }
 
 .auth a button {
     padding: 0.8rem 1rem;
+    border-radius: 3px;
+    border: none;
+    background: var(--main-color);
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
 }
