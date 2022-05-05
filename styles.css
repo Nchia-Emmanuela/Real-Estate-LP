@@ -127,6 +127,24 @@ a {
     font-size: 18px;
 }
 
+.hero__banner p button {
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 3px;
+}
+
+.hero__banner p > i {
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
 .catchy {
     margin-top: 4rem;
+}
+
+.catchy p {
+    margin-bottom: 0.8rem;
 }
