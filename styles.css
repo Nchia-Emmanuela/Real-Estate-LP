@@ -148,3 +148,11 @@ a {
 .catchy p {
     margin-bottom: 0.8rem;
 }
+
+/** MEDIA QUERIES ***************************/
+
+@media screen and (max-width: 750px) {
+    .hero__banner > div {
+        width: 100%;
+    }
+}
