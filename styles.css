@@ -149,6 +149,20 @@ a {
     margin-bottom: 0.8rem;
 }
 
+/** TABS SECTION ******************/
+.tabs {
+    padding: 0.5rem 5rem;
+}
+
+.content {
+    background: #fff;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+}
+
 /** MEDIA QUERIES ***************************/
 
 @media screen and (max-width: 750px) {
