@@ -183,6 +183,11 @@ a {
     margin-bottom: 0.8rem;
 }
 
+.color {
+    font-weight: 650;
+    color: var(--main-color);
+}
+
 /** TABS SECTION ******************/
 .tabs {
     padding: 0.5rem 5vw;
