@@ -20,4 +20,4 @@ window.addEventListener("resize", () => {
     }
 });
 
-// console.log(menu, ul)
+document.getElementById('date').textContent = new Date().getFullYear();

@@ -408,6 +408,17 @@ a {
     display: none;
 }
 
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 6vw;
+    background: var(--main-color);
+}
+
+footer h4 {
+    color: #fff;
+}
 /** MEDIA QUERIES ***************************/
 
 @media screen and (max-width:838px) {
