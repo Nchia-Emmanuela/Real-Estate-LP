@@ -20,4 +20,13 @@ window.addEventListener("resize", () => {
     }
 });
 
+const hearts = document.getElementsByClassName('fa-heart');
+
+for(let i=0; i<hearts.length; i++) {
+    console.log(hearts[i]);
+    hearts[i].addEventListener('click', () => {
+        hearts[i].classList.toggle("red");
+    })
+}
+
 document.getElementById('date').textContent = new Date().getFullYear();
