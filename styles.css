@@ -125,6 +125,7 @@ a {
 .hero__banner p {
     color: rgba(0, 0, 0, 0.8);
     font-size: 18px;
+    width: 580px;
 }
 
 .hero__banner p button {
@@ -170,7 +171,8 @@ a {
     background-color: transparent;
     border: none;
     color: rgba(0, 0, 0, 0.6);
-    font-weight: 700;
+    font-weight: 500;
+    font-size: 18px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     transition: 0.2s ease-in-out;
@@ -188,21 +190,94 @@ a {
 .details {
     display: flex;
     justify-content: space-between;
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     background: #fff;
     border-radius: 15px;
-    box-shadow: 0 5px 10px 1px #eae9e9;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-top-left-radius: 0;
+    
+}
+.details div h4 {
+    color: rgba(0, 0, 0, 0.6);
+    margin-bottom: 0.8rem;
+}
+
+.details div h2 {
+    color: var(--main-color);
+    font-size: 19px;
+
 }
 
 .details > div {
     margin: 2rem 1.5rem;
 }
 
+/** GRID SECTION ************/
+.grid {
+    padding-bottom: 6rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5rem;
+}
+
+.grid .item {
+    border-radius: 10px;
+    padding: 1.5rem;
+    padding-bottom: 0;
+}
+
+.grid .item:nth-child(2) {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.grid .item > div {
+    margin-bottom: 1.5rem;
+}
+
+.grid .item > div i {
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    border-radius: 5px;
+    background: var(--main-color);
+    margin-top: 0.2rem;
+    color: #fff;
+}
+
+.grid .item > div h2 {
+    font-size: 18px;
+    margin-left: 1rem;
+    color: var(--main-color);
+}
+
 /** MEDIA QUERIES ***************************/
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
 
 @media screen and (max-width: 750px) {
     .hero__banner > div {
+        width: 100%;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .hero__banner p {
         width: 100%;
     }
 }
