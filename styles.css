@@ -253,6 +253,18 @@ a {
     color: var(--main-color);
 }
 
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.heading h1 {
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
 /** MEDIA QUERIES ***************************/
 
 @media screen and (max-width: 1000px) {
