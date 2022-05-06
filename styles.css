@@ -228,7 +228,9 @@ a {
 .details {
     display: flex;
     justify-content: space-between;
-    padding: 0 1rem;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 1rem;
     background: #fff;
     border-radius: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -247,7 +249,7 @@ a {
 }
 
 .details > div {
-    margin: 2rem 1.5rem;
+    margin: 1rem 1.5rem;
 }
 
 /** GRID SECTION ************/
@@ -471,5 +473,21 @@ footer h4 {
 @media screen and (max-width: 620px) {
     .hero__banner p {
         width: 100%;
+    }
+}
+
+@media  screen and (max-width: 590px) {
+    .tabs {
+        margin-top: 3rem;
+    }
+}
+
+@media screen and  (max-width: 441px) {
+    .tabs__panel {
+        width: 100%;
+    }
+    
+    .tabs__panel button {
+        padding: 1.2rem 1rem;
     }
 }
