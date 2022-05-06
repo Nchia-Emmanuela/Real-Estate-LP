@@ -92,6 +92,19 @@ a {
     cursor: pointer;
 }
 
+/*** MENUE ICON ****/
+
+.fa-bars {
+    width: 4rem;
+    font-size: 2rem;
+    color: var(--main-color);
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    -webkit-transform: translate(100%);
+        transform: translate(100%);
+}
+
 /** HERO SECTION *************/
 
 .override {
@@ -266,6 +279,19 @@ a {
 }
 
 /** MEDIA QUERIES ***************************/
+
+@media screen and (max-width:838px) {
+    .right {
+        display: none;
+    }
+    .fa-bars {
+        position: absolute;
+        right: 0;
+        display: block;
+        -webkit-transform: translate(0);
+        transform: translate(0);
+    }
+}
 
 @media screen and (max-width: 1000px) {
     .grid {
