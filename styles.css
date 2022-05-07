@@ -405,6 +405,7 @@ a {
   transition: 0.3s ease-in-out;
 }
 
+/* ANIMATION */
 .lower__section .price i.red {
   color: red;
   animation: bounce 0.5s linear forwards alternate;
